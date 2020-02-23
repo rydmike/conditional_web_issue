@@ -2,6 +2,7 @@
 FLUTTER Conditional dart.io import issue on Flutter master
 
 -----------------------------------------------------------------------------------------------
+
 NOTE:
 
 This issue with similar text as below is reported as an issue here:
@@ -10,7 +11,9 @@ https://github.com/flutter/flutter/issues/51290
 Noticed after creating the issue that there is a very similar or even same issue already posted here:
 https://github.com/flutter/flutter/issues/50801
 
-The added value in this report might be that for those that only use dart.io for Platform checks to set debugDefaultTargetPlatformOverride to Fuchsia to be able to build Linux and Windows apps on master, then the above contains a simple work-around example to still allow them to use master and build web, linux and windows apps on master.
+
+The added value in this report might be that for those that only use dart.io for Platform checks to set debugDefaultTargetPlatformOverride to Fuchsia to be able to build Linux and Windows apps on master, then this report contains a simple work-around example to still allow them to use master and build web, linux and windows apps on master.
+
 -----------------------------------------------------------------------------------------------
 
 Noticed on Feb 16, 2020 on Flutter version 1.15.4-pre.82 channel master, that when doing a conditional import to avoid dart.io on WEB, it nonetheless does the dart.io importing branch. The issue is still in effect today Feb 23, 2020 on version Flutter 1.15.4-pre.139 channel master.
